@@ -46,11 +46,9 @@
 			<version>3.7.1</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.webjars/webjars-locator -->
 		<dependency>
 			<groupId>org.webjars</groupId>
-			<artifactId>webjars-locator</artifactId>
-			<version>0.50</version>
+			<artifactId>webjars-locator-lite</artifactId>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.webjars/font-awesome -->
