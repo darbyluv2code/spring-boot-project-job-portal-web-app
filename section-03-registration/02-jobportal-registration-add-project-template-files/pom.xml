@@ -14,7 +14,7 @@
 	<name>jobportal</name>
 	<description>Job Portal</description>
 	<properties>
-		<java.version>25</java.version>
+		<java.version>26</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
