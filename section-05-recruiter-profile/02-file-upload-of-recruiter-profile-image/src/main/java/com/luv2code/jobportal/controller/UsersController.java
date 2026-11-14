@@ -41,13 +41,6 @@ public class UsersController {
     }
 
     @PostMapping("/register/new")
-    public String userRegistration(@Valid Users users) {
-        // System.out.println("User:: " + users);
-        usersService.addNew(users);
-        return "redirect:/dashboard/";
-    }
-
-    @PostMapping("/register/new")
     public String userRegistration(@Valid Users users, Model model) {
         Optional<Users> optionalUsers = usersService.getUserByEmail(users.getEmail());
         if (optionalUsers.isPresent()) {
@@ -60,7 +53,6 @@ public class UsersController {
         usersService.addNew(users);
         return "redirect:/dashboard/";
     }
-    
 
     @GetMapping("/login")
     public String login() {
